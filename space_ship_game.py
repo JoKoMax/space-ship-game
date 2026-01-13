@@ -340,38 +340,38 @@ def spawn_enemy():
     if(level == 2):
         enemy_count =(0)
         enemy_type = enemy_types[0]
-        enemy_x = random.randint(0, screen_width - enemy_type["size"])
-        enemy_y = random.randint(0, screen_height // 2-10)
+        enemy_x = random.randint(0, screen_w - enemy_type["size"])
+        enemy_y = random.randint(0, screen_h // 2-10)
         enemies.append({"enemy_img": enemy_type["enemy_img"],"x": enemy_x, "y": enemy_y, "direction": random.choice([-1, 1]), "speed": enemy_type["speed"], "color": enemy_type["color"], "size": enemy_type["size"], "health": enemy_type["health"], "firerate": enemy_type["firerate"], "damage": enemy_type["damage"], "bulletcolor": enemy_type["bulletcolor"], "bulletsize": enemy_type["bulletsize"], "type": enemy_type["type"], "max_health": enemy_type["max_health"], "healer_cooldown": healer_cooldown})
     elif(level == 6):
         enemy_count =(0)
         enemy_type = enemy_types[1]
-        enemy_x = random.randint(0, screen_width - enemy_type["size"])
-        enemy_y = random.randint(0, screen_height // 2-10)
+        enemy_x = random.randint(0, screen_w - enemy_type["size"])
+        enemy_y = random.randint(0, screen_h // 2-10)
         enemies.append({"enemy_img": enemy_type["enemy_img"], "x": enemy_x, "y": enemy_y, "direction": random.choice([-1, 1]), "speed": enemy_type["speed"], "color": enemy_type["color"], "size": enemy_type["size"], "health": enemy_type["health"], "firerate": enemy_type["firerate"], "damage": enemy_type["damage"], "bulletcolor": enemy_type["bulletcolor"], "bulletsize": enemy_type["bulletsize"], "type": enemy_type["type"], "max_health": enemy_type["max_health"], "healer_cooldown": healer_cooldown})
     elif(level == 11):
         enemy_count =(0)
         enemy_type = enemy_types[3]
-        enemy_x = random.randint(0, screen_width - enemy_type["size"])
-        enemy_y = random.randint(0, screen_height // 2-10)
+        enemy_x = random.randint(0, screen_w - enemy_type["size"])
+        enemy_y = random.randint(0, screen_h // 2-10)
         enemies.append({"enemy_img": enemy_type["enemy_img"], "x": enemy_x, "y": enemy_y, "direction": random.choice([-1, 1]), "speed": enemy_type["speed"], "color": enemy_type["color"], "size": enemy_type["size"], "health": enemy_type["health"], "firerate": enemy_type["firerate"], "damage": enemy_type["damage"], "bulletcolor": enemy_type["bulletcolor"], "bulletsize": enemy_type["bulletsize"], "type": enemy_type["type"], "max_health": enemy_type["max_health"], "healer_cooldown": healer_cooldown})
     elif(level == 16):
         enemy_count =(0)
         enemy_type = enemy_types[4]
-        enemy_x = random.randint(0, screen_width - enemy_type["size"])
-        enemy_y = random.randint(0, screen_height // 2-10)
+        enemy_x = random.randint(0, screen_w - enemy_type["size"])
+        enemy_y = random.randint(0, screen_h // 2-10)
         enemies.append({"enemy_img": enemy_type["enemy_img"], "x": enemy_x, "y": enemy_y, "direction": random.choice([-1, 1]), "speed": enemy_type["speed"], "color": enemy_type["color"], "size": enemy_type["size"], "health": enemy_type["health"], "firerate": enemy_type["firerate"], "damage": enemy_type["damage"], "bulletcolor": enemy_type["bulletcolor"], "bulletsize": enemy_type["bulletsize"], "type": enemy_type["type"], "max_health": enemy_type["max_health"], "healer_cooldown": healer_cooldown})
     elif(level == 26):
         enemy_count =(0)
         enemy_type = boss_types[0]
-        enemy_x = screen_width / 2-10#random.randint(0, screen_width - enemy_type["size"])
-        enemy_y = 75#random.randint(0, screen_height // 2)
+        enemy_x = screen_w / 2-10#random.randint(0, screen_w - enemy_type["size"])
+        enemy_y = 75#random.randint(0, screen_h // 2)
         enemies.append({"enemy_img": enemy_type["enemy_img"], "x": enemy_x, "y": enemy_y, "direction": random.choice([-1, 1]), "speed": enemy_type["speed"], "color": enemy_type["color"], "size": enemy_type["size"], "health": enemy_type["health"], "firerate": enemy_type["firerate"], "damage": enemy_type["damage"], "bulletcolor": enemy_type["bulletcolor"], "bulletsize": enemy_type["bulletsize"], "type": enemy_type["type"], "max_health": enemy_type["max_health"], "healer_cooldown": healer_cooldown})
     elif(level == 51):
         enemy_count =(0)
         enemy_type = boss_types[1]
-        enemy_x = screen_width / 2-10#random.randint(0, screen_width - enemy_type["size"])
-        enemy_y = 75#random.randint(0, screen_height // 2)
+        enemy_x = screen_w / 2-10#random.randint(0, screen_w - enemy_type["size"])
+        enemy_y = 75#random.randint(0, screen_h // 2)
         enemies.append({"enemy_img": enemy_type["enemy_img"], "x": enemy_x, "y": enemy_y, "direction": random.choice([-1, 1]), "speed": enemy_type["speed"], "color": enemy_type["color"], "size": enemy_type["size"], "health": enemy_type["health"], "firerate": enemy_type["firerate"], "damage": enemy_type["damage"], "bulletcolor": enemy_type["bulletcolor"], "bulletsize": enemy_type["bulletsize"], "type": enemy_type["type"], "max_health": enemy_type["max_health"], "healer_cooldown": healer_cooldown})
 
     elif(level<6):
@@ -398,22 +398,22 @@ def spawn_enemy():
             enemy_type = enemy_types[random.randint(0, 2)]#random.choice(enemy_types2)
         else:
             enemy_type = enemy_types[random.randint(0,4)]
-        enemy_x = random.randint(0, screen_width - enemy_type["size"])
-        enemy_y = random.randint(0, screen_height // 2)
+        enemy_x = random.randint(0, screen_w - enemy_type["size"])
+        enemy_y = random.randint(0, screen_h // 2)
         enemies.append({"enemy_img": enemy_type["enemy_img"], "x": enemy_x, "y": enemy_y, "direction": random.choice([-1, 1]), "speed": enemy_type["speed"], "color": enemy_type["color"], "size": enemy_type["size"], "health": enemy_type["health"], "firerate": enemy_type["firerate"], "damage": enemy_type["damage"], "bulletcolor": enemy_type["bulletcolor"], "bulletsize": enemy_type["bulletsize"], "type": enemy_type["type"], "max_health": enemy_type["max_health"], "healer_cooldown": healer_cooldown})
 
 # Power-Up spawnen
 def spawn_power_up():
     if random.random() < power_up_spawn_chance:
         power_up_type = random.choice(power_up_types)
-        power_up_x = random.randint(0, screen_width - power_up_size)
-        power_up_y = random.randint(0, screen_height - power_up_size)
+        power_up_x = random.randint(0, screen_w - power_up_size)
+        power_up_y = random.randint(0, screen_h - power_up_size)
         power_ups.append({"x": power_up_x, "y": power_up_y, "color": power_up_type["color"], "type": power_up_type["type"]})
 
 # Münzen spawnen
 def spawn_coin():
-    coin_x = random.randint(0, screen_width - coin_size)
-    coin_y = random.randint(0, screen_height - coin_size)
+    coin_x = random.randint(0, screen_w - coin_size)
+    coin_y = random.randint(0, screen_h - coin_size)
     coins_collected.append({"x": coin_x, "y": coin_y})
     
 # Münzen einsammeln
@@ -517,8 +517,8 @@ def game_loop(events):
                 player_y += player_speed
 
             # Begrenzung der Bewegung innerhalb des Fensters
-            player_x = max(0, min(screen_width - player_size, player_x))
-            player_y = max(0, min(screen_height - player_size, player_y))
+            player_x = max(0, min(screen_w - player_size, player_x))
+            player_y = max(0, min(screen_h - player_size, player_y))
             
             
             #shotgun_active = True
@@ -568,7 +568,7 @@ def game_loop(events):
             # Gegnerbewegung und Schießen
             for enemy in enemies[:]:
                 enemy["x"] += enemy["direction"] * enemy["speed"]
-                if enemy["x"] <= 0 or enemy["x"] >= screen_width - enemy["size"]:
+                if enemy["x"] <= 0 or enemy["x"] >= screen_w - enemy["size"]:
                     enemy["direction"] *= -1  # Richtungswechsel bei Bildschirmrand
             
                 # Gegner schießen
@@ -590,7 +590,7 @@ def game_loop(events):
             for enemy_bullet in enemy_bullets[:]:
                 enemy_bullet[0] += enemy_bullet[2]  # Bewegung in x-Richtung
                 enemy_bullet[1] += enemy_bullet[3]  # Bewegung in y-Richtung
-                if enemy_bullet[1] > screen_height or enemy_bullet[0] < 0 or enemy_bullet[0] > screen_width:
+                if enemy_bullet[1] > screen_height or enemy_bullet[0] < 0 or enemy_bullet[0] > screen_w:
                     enemy_bullets.remove(enemy_bullet)
 
             # Kollision zwischen Spielerschüssen und Gegner
@@ -626,8 +626,8 @@ def game_loop(events):
                     if current_time - last_boss_shot_time >= boss_enemy_spawn_cooldown:
                         last_boss_shot_time = current_time
                         enemy_type = enemy_types[random.randint(0,4)]
-                        enemy_x = random.randint(0, screen_width - enemy_type["size"])
-                        enemy_y = random.randint(0, screen_height // 2)
+                        enemy_x = random.randint(0, screen_w - enemy_type["size"])
+                        enemy_y = random.randint(0, screen_h // 2)
                         enemies.append({"enemy_img": enemy_type["enemy_img"], "x": enemy_x, "y": enemy_y, "direction": random.choice([-1, 1]), "speed": enemy_type["speed"], "color": enemy_type["color"], "size": enemy_type["size"], "health": enemy_type["health"], "firerate": enemy_type["firerate"], "damage": enemy_type["damage"], "bulletcolor": enemy_type["bulletcolor"], "bulletsize": enemy_type["bulletsize"], "type": enemy_type["type"], "max_health": enemy_type["max_health"], "healer_cooldown": healer_cooldown})
            
            #gegner heilen
@@ -745,14 +745,14 @@ def game_loop(events):
             if shotgun_active == True:
                 #print(int(screen_width / 2 - (power_up_shotgun_end_time - current_time) * 25))#debug
                 #print(int((power_up_shotgun_end_time - current_time)*50))#debug
-                rect_x = int(screen_width / 2 - (power_up_shotgun_end_time - current_time) * 25)
+                rect_x = int(screen_w / 2 - (power_up_shotgun_end_time - current_time) * 25)
                 rect_y = 0
                 rect_width = int((power_up_shotgun_end_time - current_time) * 50)
                 rect_height = 7
                 pygame.draw.rect(screen, BLUE, pygame.Rect(rect_x, rect_y, rect_width, rect_height))
 
             if invincibility_active == True:
-                #print(int(screen_width / 2 - (power_up_invincibility_end_time - current_time) * 25))#debug
+                #print(int(screen_w / 2 - (power_up_invincibility_end_time - current_time) * 25))#debug
                 #print(int((power_up_shotgun_end_time - current_time)*50))#debug
                 rect_x = int(screen_width / 2 - (power_up_invincibility_end_time - current_time) * 25)
                 rect_y = 8
@@ -761,7 +761,7 @@ def game_loop(events):
                 pygame.draw.rect(screen, PURPLE, pygame.Rect(rect_x, rect_y, rect_width, rect_height))
 
             if quikfire_active == True:
-                #print(int(screen_width / 2 - (power_up_quikfire_end_time - current_time) * 25))#debug
+                #print(int(screen_w / 2 - (power_up_quikfire_end_time - current_time) * 25))#debug
                 #print(int((power_up_quikfire_end_time - current_time)*50))#debug
                 rect_x = int(screen_width / 2 - (power_up_quikfire_end_time - current_time) * 25)
                 rect_y = 16
@@ -806,15 +806,15 @@ def game_loop(events):
 
             # Level-Anzeige
             level_text = font.render(f"Level: {level-1}", True, BLACK)
-            screen.blit(level_text, (screen_width - 100, 10))
+            screen.blit(level_text, (screen_w - 100, 10))
 
             # Wenn der Spieler verloren hat, zeige einen Verlust-Bildschirm
             if player_health <= 0:
                 game_over_text = font.render("Game Over! Drücke R, um neu zu starten", True, BLACK)
-                screen.blit(game_over_text, (screen_width // 2 - game_over_text.get_width() // 2, screen_height // 2))
+                screen.blit(game_over_text, (screen_w // 2 - game_over_text.get_width() // 2, screen_h // 2))
             
             owner_text = font.render("by max", True, BLACK)
-            screen.blit(owner_text,(screen_width - 100, screen_height - 27))
+            screen.blit(owner_text,(screen_w - 100, screen_h - 27))
             # Aktualisieren des Bildschirms
             
             #Debug
@@ -840,10 +840,10 @@ def upgrade_loop(events):
     screen.fill(WHITE)
 
     text = font.render("UPGRADES", True, BLACK)
-    screen.blit(text, (SCREEN_W//2 - text.get_width()//2, 200))
+    screen.blit(text, (screen_w//2 - text.get_width()//2, 200))
 
     info = font.render("ESC = zurück", True, BLACK)
-    screen.blit(info, (SCREEN_W//2 - info.get_width()//2, 300))
+    screen.blit(info, (screen_w//2 - info.get_width()//2, 300))
 
     for event in events:
         if event.type == pygame.KEYDOWN:
@@ -872,3 +872,4 @@ while running:
     clock.tick(60)
 
 pygame.quit()
+
